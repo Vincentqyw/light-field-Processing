@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Jinsun Park (zzangjinsun@gmail.com / zzangjinsun@kaist.ac.kr)
 % Computer Vision and Image Processing Lab, KAIST, KOREA
 %
@@ -10,7 +10,7 @@
 % Input  : filepath - image file path
 %          ext      - extension of image file (e.g. 'png')
 % Output : LF       - light field image
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function LF = Make4DLF(filepath, ext)
 % Get image list
 list = dir(fullfile([filepath,'\*.',ext]));
