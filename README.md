@@ -6,7 +6,7 @@ This is an useful tool to decode lightfield files(.lfp) and process the raw imag
 
 Note that if you do not have LF data, please download before. Once you have run `ViewLightField`, you will get the following wonderful images.
 
-<center><img src="all_views.gif" width="90%"></center>
+<center><img src="all_views.gif" width="50%"></center>
 
 ![](http://oofx6tpf6.bkt.clouddn.com/bigimg-1.jpg)
 
