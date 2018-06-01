@@ -6,9 +6,9 @@ This is an useful tool to decode lightfield files(.lfp) and process the raw imag
 
 Note that if you do not have LF data, please download before. Once you have run `ViewLightField`, you will get the following wonderful images.
 
-![](http://oofx6tpf6.bkt.clouddn.com/all_views.gif)
+![](http://oofx6tpf6.bkt.clouddn.com/all_views-1.gif)
 
-![](http://oofx6tpf6.bkt.clouddn.com/bigimg.jpg)
+![](http://oofx6tpf6.bkt.clouddn.com/bigimg-1.jpg)
 
 ## Step 2: Horizontal EPI (fix v & y)
 

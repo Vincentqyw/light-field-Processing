@@ -36,10 +36,11 @@ for t=1:nt
         bigimg(ts:te,ss:se,2) = img(:,:,2);
         bigimg(ts:te,ss:se,3) = img(:,:,3);        
              
-        figure(1); imshow(img,'border','tight','initialmagnification','fit');
+        figure(1); imshow(img,'border','tight','initialmagnification','fit');     
         axis normal;
         truesize;
-        text(10,20,sprintf('u : %d, v : %d',s,t),'fontsize',20,'color','y');
+%         set(gcf,'pos',[727   298   338   338]);
+        text(10,30,sprintf('u : %d, v : %d',s,t),'fontsize',20,'color','y');
         if save_gif==1
             n=cnt;
             frame(n)=getframe(gcf); % get the frame
