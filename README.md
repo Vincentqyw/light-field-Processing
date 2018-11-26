@@ -12,15 +12,15 @@ Note that if you do not have LF data, please download before. Once you have run 
 
 ## Step 2: Horizontal EPI (fix v & y)
 
-![](epi-h.jpg)
+![](epi_h.jpg)
 
 
 ## Step 3: Vertical EPI (fix u & x)
 
-![](epi-v.jpg)
+![](epi_v.jpg)
 
 
 
 ## Step 4: Show Angular Patches(AP)
 
-![](buhhda2-ap-zoom.jpg)
+![](buhhda2-ap-zoom.png)
