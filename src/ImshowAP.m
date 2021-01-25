@@ -1,5 +1,5 @@
 function ImshowAP(pos,views,LF)
-close all;
+%close all;
 
 x_=pos(2);
 y_=pos(1);
