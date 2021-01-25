@@ -8,6 +8,12 @@ addpath(genpath(pwd));
 % load 'data/buddha2_LF_data.mat'
 % [LF,LF_Remap,IM_Pinhole]=hdf2LF('data/Buddha2.h5');
 
+img = imread('data/your_image.png'); % remap 2D image to 5D LF image 
+
+views=[4,4];    % [NOTE]: angular resolution of your image
+
+LF = Remap2LF(img,views);
+
 LF=mat2gray(LF);
 ViewLightField(LF);
 
@@ -21,7 +27,7 @@ v_=4;
 
 % EPI line in central-sub-view image
 figure;
-img=squeeze(LF(5,5,:,:,:));
+img=squeeze(LF(views(1)/2+1,views(2)/2+1,:,:,:));
 imshow(img,'border','tight','initialmagnification','fit');
 axis normal;
 truesize;
@@ -47,7 +53,7 @@ u_=4;
 
 % EPI line in central-sub-view image
 figure;
-img=squeeze(LF(5,5,:,:,:));
+img=squeeze(LF(views(1)/2+1,views(2)/2+1,:,:,:));
 imshow(img,'border','tight','initialmagnification','fit');
 axis normal
 truesize
@@ -70,13 +76,10 @@ hold off
 % pos is the coordinates in central view
 % result image is the corresponding AP in light field.
 pos=[477 500];
-ImshowAP(pos,LF)
+ImshowAP(pos,views,LF)
 
 pos=[600 265];
-ImshowAP(pos,LF)
+ImshowAP(pos,views,LF)
 
 pos=[458 55];
-ImshowAP(pos,LF)
-
-
-
+ImshowAP(pos,views,LF)
