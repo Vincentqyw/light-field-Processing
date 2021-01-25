@@ -1,11 +1,12 @@
-function ImshowAP(pos,LF)
+function ImshowAP(pos,views,LF)
 close all;
 
 x_=pos(2);
 y_=pos(1);
 
+
 figure;
-img=squeeze(LF(5,5,:,:,:));
+img=squeeze(LF(views(1)/2+1,views(2)/2+1,:,:,:));
 imshow(img,'border','tight','initialmagnification','fit');
 hold on;plot(pos(1),pos(2),'r.','Markersize',20);
 axis normal;
