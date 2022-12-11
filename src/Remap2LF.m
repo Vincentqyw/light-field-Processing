@@ -1,9 +1,7 @@
 
 function LF=Remap2LF(Remap,views)
 
-
 [height, width,~]=size(Remap);
-
 
 % ImLittle=zeros(height/view(1),width/view(2),3);
 

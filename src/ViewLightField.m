@@ -7,7 +7,6 @@
 % input : 5D light field image structure (t,s,y,x,ch), 
 % single type pixel intensities.
 
-
 function ViewLightField(LF)
 
 fprintf('ViewLightField...');

@@ -1,9 +1,5 @@
 function EPI_New=ComputEPI(filepath)
-% filepath°üº¬49¸öÊÓ½ÇµÄÍ¼Ïñ£¡
-
-filepath='all views\original';
-
-filepath='all views\compensated';
+% filepathåŒ…å«49ä¸ªè§†è§’çš„å›¾åƒï¼
 
 list = dir(fullfile([filepath,'\*.','jpg']));
 
@@ -52,10 +48,3 @@ imshow(IM_Pinhole)
 line([1 317],[100 100],'color','r','LineWidth',2);
 line([1 317],[140 140],'color','b','LineWidth',2);
 line([1 317],[200 200],'color','g','LineWidth',2);
-
-
-
-
-
-
-

@@ -1,10 +1,7 @@
 function View_Generator(inpath,outpath,LF_parameters,ext)
-
-
-
-% inpath ÊäÈëÍ¼ÏñµÄÂ·¾¶
-% outpath±£´æÂ·¾¶
-% ext ±£´æÎÄ¼şµÄ¸ñÊ½
+% inpath è¾“å…¥å›¾åƒçš„è·¯å¾„
+% outpathä¿å­˜è·¯å¾„
+% ext ä¿å­˜æ–‡ä»¶çš„æ ¼å¼
 
 % Img=imread('LF_Remap.jpg');
 % mkdir('input_vincent\Mat');
@@ -21,7 +18,7 @@ windowside=LF_parameters.UV_diameter;
 
 for i = 1:LF_parameters.UV_diameter
     for j = 1:LF_parameters.UV_diameter       
-%         view_num=j+(i-1)*LF_parameters.UV_diameter;%¶Ô´°¿Ú±àºÅ
+%         view_num=j+(i-1)*LF_parameters.UV_diameter;%å¯¹çª—å£ç¼–å·
         for x=1:LF_parameters.x_size%row     
             for y=1:LF_parameters.y_size%col                       
                 

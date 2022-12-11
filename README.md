@@ -2,9 +2,17 @@
 
 This is an useful tool to decode lightfield files(.lfp) and process the raw images in to 5D data. You can simplely run [`demo.m`](demo.m) step by step to see the results.
 
+You should download lightfield data to [data](./data/) folder, I uploaded Wanner HCI datasets to [Google Drive](https://drive.google.com/drive/folders/1epj7GTDlCYTnlnG-TCvPmISBbBcWEhB4?usp=sharing).
+
+# Just one step
+
+just run [demo.m](demo.m), you will get everything.
+
+# Step by step
+
 ## Step 1: load LF data
 
-Note that if you do not have LF data, please download before. Once you have run `ViewLightField`, you will get the following wonderful images.
+Once you have run `ViewLightField`, you will get the following wonderful images.
 
 <center><img src="./results/all_views.gif" width="50%"></center>
 

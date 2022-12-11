@@ -1,5 +1,3 @@
-
-
 function res=Refocus2Gif(name,FilePath,dt)
 
 cd(FilePath);
@@ -25,7 +23,6 @@ for i=cut:257
 	end
 	%------------------------------------
 	
-   
 end
 cd('..');
         

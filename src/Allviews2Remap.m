@@ -2,22 +2,21 @@
 
 function Allviews2Remap(filepath,LF_parameters,ext)
 
-% ±¾º¯Êı½«ËùÓĞÊÓ½ÇµÄÍ¼ÏñÆ´½Ó³ÉÔ­Ê¼RemapÍ¼Ïñ£»
-% ÊäÈëÊÇ°üº¬ËùÓĞÊÓ½ÇµÄÎÄ¼ş¼Ğ
-% ÀıÈç£º
+% æœ¬å‡½æ•°å°†æ‰€æœ‰è§†è§’çš„å›¾åƒæ‹¼æ¥æˆåŸå§‹Remapå›¾åƒ
+% è¾“å…¥æ˜¯åŒ…å«æ‰€æœ‰è§†è§’çš„æ–‡ä»¶å¤¹
+% ä¾‹å¦‚ï¼š
 % filepath='input_vincent\Mat';
 % ext='mat';
-
 
 addpath(filepath);
 list               = dir(fullfile([filepath,'\*.',ext]))     ;
 N                  = sqrt(size(list,1));
 x_size             = LF_parameters.x_size                 ;
 y_size             = LF_parameters.y_size                 ;
-UV_diameter   = LF_parameters.UV_diameter      ;
+UV_diameter        = LF_parameters.UV_diameter      ;
 
 
-% ÖØ¹¹Ö®ºóµÄRemapÍ¼Ïñ
+% é‡æ„ä¹‹åçš„Remapå›¾åƒ
 Remap_Construct=zeros(y_size*UV_diameter,x_size*UV_diameter,3);
 
 for i=1:UV_diameter
@@ -30,7 +29,7 @@ for i=1:UV_diameter
   			I_temp = double(imread(filename));
 	    elseif ext=='mat'	
 			I_temp = load(filename);
-            I_temp=I_temp.data;     %ÓëView_GeneratorÅäºÏÊ¹ÓÃ
+            I_temp=I_temp.data;     %ä¸View_Generatoré…åˆä½¿ç”¨
 		end
 
         Remap_Construct(i:UV_diameter:y_size*UV_diameter,...
@@ -40,7 +39,6 @@ for i=1:UV_diameter
 end
 
 % imshow(Remap_Construct/max(max(Remap_Construct(:,:,1))));
-
 imwrite(Remap_Construct/max(max(Remap_Construct(:,:,1))),'CAR_REMAP.png');
 
   

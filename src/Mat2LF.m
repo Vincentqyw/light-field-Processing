@@ -18,7 +18,7 @@ for i=1:N
         
         I_temp = load(filename);    
         I_temp = I_temp.data;      
-        LF(i,j,:,:,:) = I_temp;       % °´ÕÕÐÐ¶Á
+        LF(i,j,:,:,:) = I_temp;       % æŒ‰ç…§è¡Œè¯»
     end
 end
 
